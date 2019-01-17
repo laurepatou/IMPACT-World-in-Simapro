@@ -16,13 +16,14 @@
 Method;;;;;
 ;;;;;
 Name;;;;;
-IMPACTWorld+ (Default_Recommended_Midpoint 1.22);;;;;
+IMPACTWorld+ (Default_Recommended_Midpoint 1.23);;;;;
 ;;;;;
 Version;;;;;
-1;22;;;;
+1;23;;;;
 ;;;;;
 Comment;;;;;
-"IMPACTWorld+ (Default_Midpoint). Version 1.22IMPACT World+, is the update of the IMPACT 2002+, LUCAS, and EDIP methods. Global version with global CFs for regionalized impact categories. Regionalized impact categories only implemented for:
+"IMPACTWorld+ (Default_Midpoint). Version 1.23
+IMPACT World+, is the update of the IMPACT 2002+, LUCAS, and EDIP methods. Global version with global CFs for regionalized impact categories. Regionalized impact categories only implemented for:
 - Land occupation, biodiversity and Land transformation, biodiversity with Olson biomes resolution (=native resolution)
 - Water scarcity with country resolution (native resolution = Subwatersheds) .
 
@@ -31,7 +32,7 @@ Climate change, short term
 Climate change, long term
 Land occupation, biodiversity
 Land transformation, biodiversity
-Fossil energy use
+Fossil and nuclear energy use
 Mineral resources use
 Water scarcity
 Freshwater acidification
@@ -46,7 +47,11 @@ Human toxicity non cancer
 Ionizing radiations
 Ozone Layer Depletion
 
-Release: October 2018
+Release: January 2019
+Changes compared to 1.22:
+- For fossil energy use IC, name of elem flows and CF values realigned with the corresponding IC Non-renewable energy in the last version of IMPACT 2002+ (v2.20 implemented in simapro)
+- Fossil energy use IC renamed for ""Fossil and nuclear energy use""
+
 Changes compared to 1.21:
 - For land occupation and land transformation, CF values recalculated from endpoint with annual crop CF as reference substance. Units were also adjusted.
 - Impact category names and units aligned with IW+ article
@@ -20082,55 +20087,50 @@ Raw;land;Transformation, to urban, discontinuously built, NI;;0.213438735;m2
 Raw;land;Transformation, to urban, discontinuously built, NL;;0.656126482;m2
 ;;;;;
 Impact category;;;;;
-Fossil energy use;MJ deprived;;;;
+Fossil and nuclear energy use;MJ deprived;;;;
 ;;;;;
 Substances;;;;;
-Raw;(unspecified);Coal, 18 MJ per kg;;1.24E+01;kg
-Raw;(unspecified);Coal, 26,4 MJ per kg;;1.81E+01;kg
-Raw;(unspecified);Coal, 26.4 MJ per kg;;1.81E+01;kg
-Raw;(unspecified);Coal, 29,3 MJ per kg;;2.01E+01;kg
-Raw;(unspecified);Coal, 29.3 MJ per kg;;2.01E+01;kg
-Raw;(unspecified);Coal, brown;;6.80E+00;kg
-Raw;(unspecified);Coal, brown, 10 MJ per kg;;6.87E+00;kg
-Raw;(unspecified);Coal, brown, 8 MJ per kg;;5.49E+00;kg
-Raw;(unspecified);Coal, feedstock, 26,4 MJ per kg;;1.81E+01;kg
-Raw;(unspecified);Coal, feedstock, 26.4 MJ per kg;;1.81E+01;kg
-Raw;(unspecified);Coal, hard;;1.31E+01;kg
-Raw;(unspecified);Energy, from coal;;6.87E-01;MJ
-Raw;(unspecified);Energy, from coal, brown;;6.87E-01;MJ
-Raw;(unspecified);Energy, from gas, natural;;9.21E-01;MJ
-Raw;(unspecified);Energy, from oil;;1.00E+00;MJ
-Raw;(unspecified);Energy, from uranium;;9.39E-01;MJ
-Raw;(unspecified);Energy, unspecified;;1.00E+00;MJ
-Raw;(unspecified);Gas, natural, 30,3 MJ per kg;008006-14-2;2.79E+01;kg
-Raw;(unspecified);Gas, natural, 30.3 MJ per kg;008006-14-2;2.79E+01;kg
-Raw;(unspecified);Gas, natural, 35 MJ per m3;008006-14-2;3.22E+01;m3
-Raw;(unspecified);Gas, natural, 36,6 MJ per m3;008006-14-2;3.37E+01;m3
-Raw;(unspecified);Gas, natural, 36.6 MJ per m3;008006-14-2;3.37E+01;m3
-Raw;(unspecified);Gas, natural, 46,8 MJ per kg;008006-14-2;4.31E+01;kg
-Raw;(unspecified);Gas, natural, 46.8 MJ per kg;008006-14-2;4.31E+01;kg
-Raw;(unspecified);Gas, natural, feedstock, 35 MJ per m3;008006-14-2;3.22E+01;m3
-Raw;(unspecified);Gas, natural, feedstock, 46,8 MJ per kg;008006-14-2;4.31E+01;kg
-Raw;(unspecified);Gas, natural, feedstock, 46.8 MJ per kg;008006-14-2;4.31E+01;kg
-Raw;(unspecified);Gas, natural/m3;008006-14-2;3.71E+01;m3
-Raw;(unspecified);Gas, petroleum, 35 MJ per m3;;3.50E+01;m3
-Raw;(unspecified);Oil, crude;;4.58E+01;kg
-Raw;(unspecified);Oil, crude, 38400 MJ per m3;;3.84E+04;m3
-Raw;(unspecified);Oil, crude, 41 MJ per kg;;4.10E+01;kg
-Raw;(unspecified);Oil, crude, 42 MJ per kg;;4.20E+01;kg
-Raw;(unspecified);Oil, crude, 42,6 MJ per kg;;4.26E+01;kg
-Raw;(unspecified);Oil, crude, 42,7 MJ per kg;;4.27E+01;kg
-Raw;(unspecified);Oil, crude, 42.6 MJ per kg;;4.26E+01;kg
-Raw;(unspecified);Oil, crude, 42.7 MJ per kg;;4.27E+01;kg
-Raw;(unspecified);Oil, crude, feedstock, 41 MJ per kg;;4.10E+01;kg
-Raw;(unspecified);Oil, crude, feedstock, 42 MJ per kg;;4.20E+01;kg
-Raw;(unspecified);Uranium;007440-61-1;5.26E+05;kg
-Raw;(unspecified);Uranium ore, 1,11 GJ per kg;;1.04E+03;kg
-Raw;in ground;Uranium oxide, 332 GJ per kg, in ore;001317-99-3;3.22E+05;kg
-Raw;in water;Uranium oxide, 332 GJ per kg, in ore;001317-99-3;3.22E+05;kg
-Raw;(unspecified);Uranium, 2291 GJ per kg;007440-61-1;2.15E+06;kg
-Raw;(unspecified);Uranium, 451 GJ per kg;007440-61-1;4.23E+05;kg
-Raw;(unspecified);Uranium, 560 GJ per kg;007440-61-1;5.26E+05;kg
+Raw;(unspecified);Coal, 18 MJ per kg;;18;kg
+Raw;(unspecified);Coal, 26.4 MJ per kg;;26.4;kg
+Raw;(unspecified);Coal, 29.3 MJ per kg;;29.3;kg
+Raw;(unspecified);Coal, brown;;9.9;kg
+Raw;(unspecified);Coal, brown, 10 MJ per kg;;10;kg
+Raw;(unspecified);Coal, brown, 8 MJ per kg;;8;kg
+Raw;(unspecified);Coal, feedstock, 26.4 MJ per kg;;26.4;kg
+Raw;(unspecified);Coal, hard;;19.1;kg
+Raw;(unspecified);Energy, from coal;;1;MJ
+Raw;(unspecified);Energy, from coal, brown;;1;MJ
+Raw;(unspecified);Energy, from gas, natural;;1;MJ
+Raw;(unspecified);Energy, from oil;;1;MJ
+Raw;(unspecified);Energy, from uranium;;1;MJ
+Raw;(unspecified);Energy, unspecified;;1;MJ
+Raw;(unspecified);Gas, natural, 30.3 MJ per kg;008006-14-2;30.3;kg
+Raw;(unspecified);Gas, natural, 35 MJ per m3;008006-14-2;35;m3
+Raw;(unspecified);Gas, natural, 36.6 MJ per m3;008006-14-2;36.6;m3
+Raw;(unspecified);Gas, natural, 46.8 MJ per kg;008006-14-2;46.8;kg
+Raw;(unspecified);Gas, natural, feedstock, 35 MJ per m3;008006-14-2;35;m3
+Raw;(unspecified);Gas, natural, feedstock, 46.8 MJ per kg;008006-14-2;46.8;kg
+Raw;(unspecified);Gas, natural/m3;008006-14-2;40.3;m3
+Raw;(unspecified);Gas, petroleum, 35 MJ per m3;;35;m3
+Raw;(unspecified);Methane;000074-82-8;50.4;kg
+Raw;(unspecified);Oil, crude;;45.8;kg
+Raw;(unspecified);Oil, crude, 38400 MJ per m3;;38400;m3
+Raw;(unspecified);Oil, crude, 41 MJ per kg;;41;kg
+Raw;(unspecified);Oil, crude, 42 MJ per kg;;42;kg
+Raw;(unspecified);Oil, crude, 42.6 MJ per kg;;42.6;kg
+Raw;(unspecified);Oil, crude, 42.7 MJ per kg;;42.7;kg
+Raw;(unspecified);Oil, crude, feedstock, 41 MJ per kg;;41;kg
+Raw;(unspecified);Oil, crude, feedstock, 42 MJ per kg;;42;kg
+Raw;(unspecified);Peat;;9.9;kg
+Raw;(unspecified);Uranium;007440-61-1;560000;kg
+Raw;(unspecified);Uranium ore, 1.11 GJ per kg;;1.11E+03;kg
+Raw;(unspecified);Uranium, 2291 GJ per kg;007440-61-1;2.29E+06;kg
+Raw;(unspecified);Uranium, 451 GJ per kg;007440-61-1;4.51E+05;kg
+Raw;(unspecified);Uranium, 560 GJ per kg;007440-61-1;5.60E+05;kg
+Raw;(unspecified);Wood (16.9 MJ/kg);;0;kg
+Raw;(unspecified);Wood, hard, standing;;0;m3
+Raw;(unspecified);Wood, soft, standing;;0;m3
+Raw;(unspecified);Wood, unspecified, standing/m3;;0;m3
 ;;;;;
 Impact category;;;;;
 Mineral resources use;kg deprived;;;;
