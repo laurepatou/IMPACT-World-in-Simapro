@@ -22,7 +22,7 @@ Version;;;;;
 1;23;;;;
 ;;;;;
 Comment;;;;;
-"IMPACTWorld+ (Default_Midpoint). Version 1.23
+"IMPACTWorld+ (Default_Midpoint). Version 1.23  
 IMPACT World+, is the update of the IMPACT 2002+, LUCAS, and EDIP methods. Global version with global CFs for regionalized impact categories. Regionalized impact categories only implemented for:
 - Land occupation, biodiversity and Land transformation, biodiversity with Olson biomes resolution (=native resolution)
 - Water scarcity with country resolution (native resolution = Subwatersheds) .
